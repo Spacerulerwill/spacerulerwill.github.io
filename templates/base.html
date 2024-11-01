@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Spacerulerwill</title>
+  <link rel="stylesheet" href="{{ get_url(path='base.css') | safe }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Spacerulerwill</h1>
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="https://github.com/Spacerulerwill" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <hr>
+        {% block content %}
+        {% endblock content %}
+        <hr>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <br>
+        <p>&copy; 2024 Spacerulerwill. All rights reserved.</p>
+    </footer>
+</body>
+</html>
