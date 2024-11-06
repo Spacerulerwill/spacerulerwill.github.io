@@ -19,7 +19,7 @@ template = "base-markdown.html"
     <li>Data structures and algorithms</li>
     <li>Compilers and interpreters</li>
     <li>Hardware virtualization and emulation</li>
-    <li>Minecraft modding</li>
+    <li>Modding</li>
 </ul>
 
 <p>
