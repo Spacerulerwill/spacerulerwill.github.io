@@ -9,16 +9,16 @@ name: Build and deploy GH Pages
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch'
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: build_and_deploy
+
+      - name: Create CNAME file
+        run: echo "spacerulerwill.com" > CNAME
+
+      - name: Build and Deploy
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
-          # Target branch
           PAGES_BRANCH: gh-pages
-          # Provide personal access token
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Or if publishing to the same repo, use the automatic token
-          #TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
