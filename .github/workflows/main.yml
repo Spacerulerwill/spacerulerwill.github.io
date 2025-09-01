@@ -13,12 +13,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Create CNAME file
-        run: echo "spacerulerwill.com" > public/CNAME
-
       - name: Build and Deploy
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
           PAGES_BRANCH: gh-pages
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create CNAME file
+        run: echo "spacerulerwill.com" > public/CNAME
 
