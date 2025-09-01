@@ -20,5 +20,5 @@ jobs:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create CNAME file
-        run: echo "spacerulerwill.com" > public/CNAME
+        run: echo "spacerulerwill.com" > CNAME
 
