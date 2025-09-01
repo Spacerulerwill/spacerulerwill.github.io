@@ -14,9 +14,3 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
-
-title = "My Blog"
-base_url = "https://myblog.com" # Replace this with your actual URL
-description = "A blog about my adventures"
-paginate_by = 5
-theme = "your-theme-name" # Optional, if you want to use a custom theme
